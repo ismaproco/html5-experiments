@@ -21,7 +21,7 @@ html, body {
     border-width: 8px;
     border-style: solid;
     border-radius: 50%;
-
+    background-color: orange;
     box-shadow: 0 0 128px red;
 }
 
@@ -32,6 +32,8 @@ html, body {
     top: 0;
     left: 50%;
 
+    border-radius: 50%;
+    background-color: blue;
     height: 30px;
     width: 30px;
     margin-left: -15px;
@@ -45,8 +47,8 @@ html, body {
 
     width: 600px;
     height: 450px;
-    margin-top: -350px;
-    margin-left: -350px;
+    margin-top: -200px;
+    margin-left: -225px;
 
     border-width: 2px;
     border-style: dotted;
