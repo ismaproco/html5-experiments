@@ -5,6 +5,7 @@ html, body {
     
     /* The universe is black */
     background-color: black;
+    overflow: hidden;
 }
 
 #sun {
