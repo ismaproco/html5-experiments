@@ -19,11 +19,12 @@ html, body {
     margin-left: -100px;
 
     border-color: orange;
-    border-width: 8px;
-    border-style: solid;
     border-radius: 50%;
     background-color: orange;
     box-shadow: 0 0 128px red;
+    animation: sunColor 100ms infinite, sunShadow 100ms infinite;
+    -moz-animation: sunColor 100ms infinite, sunShadow 100ms infinite;
+    -webkit-animation: sunColor 100ms infinite, sunShadow 100ms infinite;
 }
 
 #earth {
@@ -117,4 +118,34 @@ html, body {
          -o-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+
+
+@-moz-keyframes sunColor /* Firefox */
+{
+  0%   {background:orange;}
+  50%  {background:yellow;}
+  100%   {background:orange;}
+}
+
+@-webkit-keyframes sunColor /* Safari and Chrome */
+{
+  0%   {background:orange;}
+  50%  {background:yellow;}
+  100%   {background:orange;}
+}
+
+@-moz-keyframes sunShadow /* Firefox */
+{
+  0%   {box-shadow: 0 0 128px orange;}
+  50%  {box-shadow: 0 0 128px yellow;}
+  100%   {box-shadow: 0 0 128px orange;}
+}
+
+@-webkit-keyframes sunShadow /* Safari and Chrome */
+{
+  0%   {box-shadow: 0 0 128px orange;}
+  50%  {box-shadow: 0 0 128px yellow;}
+  100%   {box-shadow: 0 0 128px orange;}
 }
